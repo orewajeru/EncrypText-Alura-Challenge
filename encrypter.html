@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/encrypter.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encrypt your Text - CrypText</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-icon">
+        <a href="./index.html"
+          ><img src="./sources/alura icon.png" alt="" srcset=""
+        /></a>
+      </div>
+
+      <section class="container">
+        <div class="container-text">
+          <h2 class="container-text_h2">Your text</h2>
+          <textarea
+            name="text"
+            id="textContent"
+            cols="30"
+            rows="10"
+            placeholder="Write your text in lowercase"
+          ></textarea>
+          <button class="container-buttons" id="copy-button" onclick="copy()">
+            Copy
+          </button>
+        </div>
+        <div class="source-container">
+          <button
+            class="container-buttons"
+            id="encrypt-button"
+            onclick="encrypt()"
+          >
+            Encrypt
+          </button>
+          <button
+            class="container-buttons"
+            id="decrypt-button"
+            onclick="decrypt()"
+          >
+            Decrypt
+          </button>
+
+          <img
+            src="./sources/chico-asustado.png"
+            alt="Scared Boy"
+            srcset=""
+            id="avatar"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
